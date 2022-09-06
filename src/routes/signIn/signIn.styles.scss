@@ -1,0 +1,23 @@
+.signIn {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .signIn-googleBtn {
+    background-color: white;
+    padding: 15px 50px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: 0.1s linear;
+    &:hover {
+      background-color: #4285f4;
+      color: white;
+    }
+    .logo-google {
+      margin-right: 10px;
+    }
+  }
+}

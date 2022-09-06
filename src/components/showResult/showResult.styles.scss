@@ -1,0 +1,35 @@
+.container-result {
+  margin-top: 20px;
+  .result {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba($color: #555151, $alpha: 1);
+    .container-btn {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border: none;
+      .saveIcon {
+        height: 72px;
+        width: 72px;
+        background-image: url("../../icons/saveIcon.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .removeIcon {
+        height: 72px;
+        width: 72px;
+        background-image: url("../../icons/removeIcon.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

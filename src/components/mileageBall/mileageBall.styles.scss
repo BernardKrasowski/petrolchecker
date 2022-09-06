@@ -1,0 +1,22 @@
+.mileageBall-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .spans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .low {
+    background-color: green;
+  }
+}
