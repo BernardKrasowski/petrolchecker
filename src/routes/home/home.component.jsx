@@ -28,11 +28,16 @@ function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (
-      carMileageAfter < carMileageBefore ||
+    if (carMileageAfter < carMileageBefore) {
+      setFormFields(defaultFormFields);
+      return alert("Wrong value car mileage");
+    } else if (
+      carMileageAfter > 0 &&
+      carMileageBefore > 0 &&
       carMileageAfter === carMileageBefore
     ) {
       setFormFields(defaultFormFields);
+
       return alert("Wrong value car mileage");
     }
 
@@ -93,7 +98,6 @@ function Home() {
           Submit
         </Button>
       </form>
-
       <ShowResult currentResult={currentResult} clear={clearCurrentRsult} />
     </div>
   );
